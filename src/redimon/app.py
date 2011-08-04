@@ -30,5 +30,6 @@ def ajax():
 
 # run the app.
 if __name__ == '__main__':
+    import socket
     app.debug = True
-    app.run()
+    app.run(port=3002,host=socket.gethostname())
